@@ -364,18 +364,3 @@ pcap_live_dump_ended(pcap_t *p, int sync){
 	return PacketIsDumpEnded(p->adapter, (BOOLEAN)sync);
 
 }
-
-PAirpcapHandle pcap_get_airpcap_handle(pcap_t *p)
-{
-#ifdef HAVE_AIRPCAP_API
-	if (p->adapter == NULL)
-	{
-		sprintf(p->errbuf, "wrong interface type. A physical interface is needed");
-		return NULL;
-	}
-
-	return PacketGetAirPcapHandle(p->adapter);
-#else
-	return NULL;
-#endif /* HAVE_AIRPCAP_API */
-}

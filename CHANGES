@@ -1,0 +1,5 @@
+Changes from WinPcap 4.1.2
+==========================
+
+- 98x Driver removed (dropped support for Win95, 98 and ME)
+- Update to current trunk version of libpcap (Git submodule)
