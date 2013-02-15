@@ -1,4 +1,9 @@
 pcap
 ====
 
-libpcap for windows (this repository shall contain extensions/fixes for WinPcap)
+libpcap for windows
+(based on WinPcap and libpcap)
+
+- no win9x support
+- no proprietary extension support
+- (no remote support?)
